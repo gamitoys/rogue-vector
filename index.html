@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Rogue Vector+">
 <meta name="theme-color" content="#000000">
 <link rel="manifest" href="manifest.json">
@@ -14,7 +15,7 @@
   main{max-width:420px;margin:0 auto;padding:24px 16px calc(24px + env(safe-area-inset-bottom));}
   h1{letter-spacing:3px;font-weight:normal;font-size:22px;}
   a{color:#7dff6a;}
-  ol{padding-left:1.2em;line-height:1.7;font-size:14px;}
+  ol,ul{padding-left:1.2em;line-height:1.7;font-size:14px;}
   .box{border:1px solid #ff9a3c;padding:12px;margin:16px 0;}
   code{color:#e8c24a;}
 </style>
@@ -24,16 +25,23 @@
   <h1>ROGUE VECTOR+</h1>
   <p>Gami Toys Works</p>
   <div class="box">
-    iPhone のホーム画面に追加するには、<b>Safari でこの https ページを開く</b>必要があります。
-    Files / ファイルアプリの <code>file://</code> では追加できません。コピーUIもそこで出ます。
+    GitHub Pages (<code>gamitoys.github.io</code>) はリポジトリ設定で有効になるまで 404 です。
+    今すぐ遊ぶ / ホーム画面に追加するには、下の jsDelivr を Safari で開いてください。
   </div>
+  <p><a href="https://cdn.jsdelivr.net/gh/gamitoys/rogue-vector@main/index.html">このページ（HTTPS）</a></p>
   <ol>
-    <li>下の PLAY を Safari で開く</li>
-    <li>共有ボタン → 「ホーム画面に追加」</li>
-    <li>追加したアイコンから起動する（Safari のバーが消える）</li>
+    <li>上のリンクを Safari で開く</li>
+    <li>共有 → ホーム画面に追加</li>
+    <li>追加したアイコンから起動</li>
   </ol>
-  <p><a href="game.html">PLAY — ゲームを開く</a></p>
-  <p>Pages 反映まで数分かかることがあります。</p>
+  <p>Pages を有効にする手順（1回だけ）:</p>
+  <ol>
+    <li>GitHub で rogue-vector を開く</li>
+    <li>Settings → Pages</li>
+    <li>Build and deployment → Source を <b>Deploy from a branch</b></li>
+    <li>Branch: <b>main</b> / folder: <b>/ (root)</b> → Save</li>
+  </ol>
+  <p>有効後の本番URL: <a href="https://gamitoys.github.io/rogue-vector/">https://gamitoys.github.io/rogue-vector/</a></p>
 </main>
 </body>
 </html>
